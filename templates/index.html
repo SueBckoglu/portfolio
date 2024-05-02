@@ -23,6 +23,12 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Link to Bootstrap CSS file from CDN -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Or reference the local Bootstrap CSS file -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -245,7 +251,7 @@
                 <li>Provided technical support during events and workshops, ensuring seamless IT operations.</li>
                 <li>Actively participated in knowledge sharing activities, including organizing training sessions on IT topics for colleagues.</li>
               </ul>
-              </p>
+             
             </div>
               <div class="resume-item">
                   <h4>Digital Application Engineer</h4>
@@ -263,7 +269,6 @@
                 <li>Provided technical support during events and workshops, ensuring seamless IT operations.</li>
                 <li>Actively participated in knowledge sharing activities, including organizing training sessions on IT topics for colleagues.</li>
               </ul>
-              </p>    
               </div>
           </div>
         </div>
@@ -659,17 +664,19 @@
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                    <label for="name"></label><input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                    <label for="email"></label><input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                  <label for="subject"></label><input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                  <label>
+                      <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                  </label>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
