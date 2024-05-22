@@ -33,14 +33,7 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
-
-    <!-- =======================================================
-    * Template Name: Laura
-    * Template URL: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/
-    * Updated: Mar 17 2024 with Bootstrap v5.3.3
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
+    
 </head>
 
 <body>
@@ -75,313 +68,191 @@
 <main id="main">
 
     <!-- ======= About Me Section ======= -->
-    <section id="about" class="about">
-        <div class="container">
+<section id="about" class="about">
+    <div class="container">
 
-            <div class="section-title">
-                <span>About Me</span>
-                <h2>About Me</h2>
-                <p>{{ about_me }}</p>
+        <div class="section-title">
+            <span>About Me</span>
+            <h2>About Me</h2>
+            <p>{{ about_me }}</p>
+        </div>
+
+        <div class="row">
+            <div class="image col-lg-4 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
+            <div class="col-lg-8 d-flex flex-column align-items-stretch">
+                <div class="content ps-lg-4 d-flex flex-column justify-content-center">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Name:</strong> <span>{{ name }}</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.suedabicaklioglu.com</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+90 531 933 12 72</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Istanbul, Turkey</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>suebckoglu@gmail.com</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-4 ml-4 mr-4">
+                        <div class="resume-item pb-0">
+                            <p><em>
+                                Hello! I'm {{ name }}, a spirited Information Systems Engineering student hailing from the vibrant city of Istanbul, Turkey.<br><br>
+                                I'm fueled by an unwavering passion for software development and IT support. It's not just a career path for me; it's a journey driven by my insatiable curiosity to delve into the realms of new technologies and my heartfelt desire to leverage them for creating a positive impact.<br><br>
+                                My academic voyage has been a thrilling ride, punctuated by countless programming projects and hands-on experiences. Whether it's coding late into the night or troubleshooting tech dilemmas, I've embraced each challenge with open arms. My time as an IT Support Professional at Siemens has been particularly enriching, allowing me to blend theoretical knowledge with real-world problem-solving skills.<br><br>
+                                What keeps me going is the boundless enthusiasm to learn and grow in the ever-evolving landscape of information technology. I'm a firm believer in the power of continuous improvement, always on the lookout for opportunities to sharpen my skills and contribute meaningfully to groundbreaking projects.<br><br>
+                                Beyond the world of tech, my heart finds solace in the companionship of two adorable creatures – Chloe, my faithful dog, and Bulut, my playful cat. As an only child, my upbringing has been enriched by the unconditional love and support of my doting parents, who have been my pillars of strength every step of the way.<br><br>
+                                In a nutshell, I'm a dreamer, a doer, and a firm believer in the transformative potential of technology to shape a brighter tomorrow. Join me on this exhilarating journey as we harness the power of innovation to create a world where possibilities are limitless.
+                            </em></p>
+                        </div>
+                    </div>
+                </div><!-- End .content -->
+            </div>
+        </div>
+
+    </div>
+</section><!-- End About Me Section -->
+    
+   <!-- ======= My Resume Section ======= -->
+<section id="resume" class="resume">
+    <div class="container">
+
+        <div class="section-title">
+            <span>My Resume</span>
+            <h2>My Resume</h2>
+            <p>Dynamic and skilled Information Systems Engineering student with extensive experience in IT support and application development.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="resume-title">Education</h3>
+                <div class="resume-item">
+                    <h4>Bachelor of Science in Information Systems Engineering</h4>
+                    <h5>2020 - 2024</h5>
+                    <p><em>Piri Reis University</em></p>
+                    <p><strong>Programming Fundamentals: </strong>Python, C/C++, Java, HTML/CSS, JavaScript, Django, Object-Oriented Programming, Visual Programming, Advanced Web Development</p>
+                    <p><strong>Mathematics and Problem Solving: </strong>Data Structures, Algorithms, Linear Algebra, Probability and Statistics, Ordinary and Partial Differential Equations</p>
+                    <p><strong>System Fundamentals and Specializations: </strong>Computer Networks and Internet, Database Management Systems (SQL), Operating Systems, Cybersecurity, Computer Architecture</p>
+                    <p><strong>Advanced Topics: </strong>Artificial Intelligence, Machine Learning, Software Quality Assurance and Testing, Data Mining, Web Programming, System Analysis and Design, Entrepreneurship, Digital Image Processing, Computer Vision, Analytical Thinking and Problem Solving Techniques, Advanced Web Programming</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h3 class="resume-title">Professional Experience</h3>
+                <div class="resume-item">
+                    <h4>IT Support Specialist</h4>
+                    <h5>August 2022 - August 2024</h5>
+                    <p><em>SIEMENS</em></p>
+                    <ul>
+                        <li>Provided comprehensive IT user support to ensure the smooth operation of internal systems and processes.</li>
+                        <li>Conducted regular maintenance of hardware and software, including computers, servers, and printers, to uphold optimal functionality.</li>
+                        <li>Ensured compliance with IT policies and regulations, maintaining up-to-date IT systems and procedures in alignment with industry standards.</li>
+                        <li>Supported the procurement process for IT equipment, software, and services, contributing to efficient resource allocation.</li>
+                        <li>Developed and implemented automation scripts for routine IT tasks, enhancing operational efficiency.</li>
+                        <li>Assisted in network administration tasks, including troubleshooting network issues and ensuring robust cybersecurity measures.</li>
+                        <li>Maintained accurate inventories of software and hardware assets, updating documentation as necessary.</li>
+                        <li>Provided technical support during events and workshops, ensuring seamless IT operations.</li>
+                        <li>Actively participated in knowledge sharing activities, including organizing training sessions on IT topics for colleagues.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section><!-- End My Resume Section -->
+
+
+    <!-- ======= My Skills Section ======= -->
+<section id="services" class="services">
+    <div class="container">
+
+        <div class="section-title">
+            <span>My Skills</span>
+            <h2>My Skills</h2>
+            <p>Showcasing my abilities and expertise in various domains of technology and development.</p>
+        </div>
+
+        <div class="row">
+            <!-- Frontend Development Skills -->
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bxl-html5"></i></div>
+                    <h4 class="title"><a href="">Frontend Development</a></h4>
+                    <p class="description">
+                        HTML5<br>
+                        CSS3<br>
+                        JavaScript<br>
+                        React.js<br>
+                        Vue.js<br>
+                        UI/UX Design<br>
+                        Responsive Design<br>
+                        Cross-Browser Compatibility<br>
+                        Web Performance Optimization
+                    </p>
+                </div>
             </div>
 
-            <div class="row">
-                <div class="image col-lg-4 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
-                <div class="col-lg-8 d-flex flex-column align-items-stretch">
-                    <div class="content ps-lg-4 d-flex flex-column justify-content-center">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <ul>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Name:</strong>
-                                        <span>{{ name }}</span>
-                                    </li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.suedabicaklioglu.com</span>
-                                    </li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+90 531 933 12 72</span>
-                                    </li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Istanbul, Turkey</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-6">
-                                <ul>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong>
-                                        <span>Bachelor</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>suebckoglu@gmail.com</span>
-                                    </li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong>
-                                        <span>Available</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="row mt-n4">
-                            <div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
-                                <div class="count-box">
-                                    <i class="bi bi-emoji-smile" style="color: #20b38e;"></i>
-                                    <span data-purecounter-start="0" data-purecounter-end="232"
-                                          data-purecounter-duration="1" class="purecounter"></span>
-                                    <p><strong>Happy Clients</strong> consequuntur voluptas nostrum aliquid ipsam
-                                        architecto ut.</p>
-                                </div>
-                            </div>
+            <!-- Backend and DevOps Skills -->
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-server"></i></div>
+                    <h4 class="title"><a href="">Backend & DevOps</a></h4>
+                    <p class="description">
+                        Django<br>
+                        SQL<br>
+                        Firebase<br>
+                        Docker<br>
+                        Kubernetes (familiar)<br>
+                        CI/CD (familiar with Jenkins)<br>
+                        Operating Systems: Windows, Linux, MacOS
+                    </p>
+                </div>
+            </div>
 
-                            <div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
-                                <div class="count-box">
-                                    <i class="bi bi-journal-richtextr" style="color: #8a1ac2;"></i>
-                                    <span data-purecounter-start="0" data-purecounter-end="521"
-                                          data-purecounter-duration="1" class="purecounter"></span>
-                                    <p><strong>Projects</strong> adipisci atque cum quia aspernatur totam laudantium et
-                                        quia dere tan</p>
-                                </div>
-                            </div>
+            <!-- Programming & Scripting Skills -->
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-code"></i></div>
+                    <h4 class="title"><a href="">Programming & Scripting</a></h4>
+                    <p class="description">
+                        Object Oriented Programming: Java<br>
+                        Scripting Languages: Python (familiar)<br>
+                        Version Control: Git, GitHub<br>
+                        Testing Frameworks<br>
+                        Debugging
+                    </p>
+                </div>
+            </div>
 
-                            <div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
-                                <div class="count-box">
-                                    <i class="bi bi-clock" style="color: #2cbdee;"></i>
-                                    <span data-purecounter-start="0" data-purecounter-end="2"
-                                          data-purecounter-duration="1" class="purecounter"></span>
-                                    <p><strong>Years of experience</strong> aut commodi quaerat modi aliquam nam ducimus
-                                        aut voluptate non vel</p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
-                                <div class="count-box">
-                                    <i class="bi bi-award" style="color: #ffb459;"></i>
-                                    <span data-purecounter-start="0" data-purecounter-end="16"
-                                          data-purecounter-duration="1" class="purecounter"></span>
-                                    <p><strong>Awards</strong> rerum asperiores dolor alias quo reprehenderit eum et
-                                        nemo pad der</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- End .content-->
-                    {% for skills in skills %}
-                        <div class="skills-content ps-lg-4">
-                        <div class="progress">
-                            <span class="skill">{{ skills.name }} <i class="val">{{ skills.percentage }}%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="{{ skills.percentage }}" 
-                                     aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    {% endfor %}
-                    </div>
-
+            <!-- Professional & Soft Skills -->
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-user"></i></div>
+                    <h4 class="title"><a href="">Professional & Soft Skills</a></h4>
+                    <p class="description">
+                        Agile Methodologies: Scrum, Kanban<br>
+                        Strong Team Collaboration<br>
+                        Adaptability<br>
+                        Strong Interpersonal Communication<br>
+                        Presentation Skills<br>
+                        Client Relationship Management<br>
+                        Managing Multiple Projects and Deadlines<br>
+                        Business Orientation with Strategic and Analytical Skills
+                    </p>
                 </div>
             </div>
 
         </div>
-    </section><!-- End About Me Section -->
 
-    <!-- ======= My Resume Section ======= -->
-    <section id="resume" class="resume">
-        <div class="container">
+    </div>
+</section><!-- End My Skills Section -->
 
-            <div class="section-title">
-                <span>My Resume</span>
-                <h2>My Resume</h2>
-                <p>Dynamic and skilled Information Systems Engineering student with extensive experience in IT support,
-                    application development.</p>
-            </div>
 
-            <div class="row">
-                <div class="col-lg-6">
-                    <h3 class="resume-title">Sumary</h3>
-                    <div class="resume-item pb-0">
-                        <h4>{{ name }}</h4>
-                        <p><em><p>Hello! I'm {{ name }}, a spirited Information Systems Engineering student
-                            hailing from the vibrant city of Istanbul, Turkey. <br>
-                            <br>
-                            I'm fueled by an unwavering passion for software development and IT support.
-                            It's not just a career path for me; it's a journey driven by my insatiable curiosity to
-                            delve into the realms of new technologies and my heartfelt desire to leverage them for
-                            creating a positive impact. <br>
-                            <br>
-                            My academic voyage has been a thrilling ride, punctuated by countless programming projects
-                            and hands-on experiences.
-                            Whether it's coding late into the night or troubleshooting tech dilemmas, I've embraced each
-                            challenge with open arms.
-                            My time as an IT Support Professional at Siemens has been particularly enriching, allowing
-                            me to blend theoretical knowledge with real-world problem-solving skills. <br>
-                            <br>
-                            What keeps me going is the boundless enthusiasm to learn and grow in the ever-evolving
-                            landscape of information technology.
-                            I'm a firm believer in the power of continuous improvement, always on the lookout for
-                            opportunities to sharpen my skills and contribute meaningfully to groundbreaking projects.
-                            <br>
-                            <br>
-                            Beyond the world of tech, my heart finds solace in the companionship of two adorable
-                            creatures – Chloe, my faithful dog, and Bulut, my playful cat.
-                            As an only child, my upbringing has been enriched by the unconditional love and support of
-                            my doting parents, who have been my pillars of strength every step of the way. <br>
-                            <br>
-                            In a nutshell, I'm a dreamer, a doer, and a firm believer in the transformative potential of
-                            technology to shape a brighter tomorrow.
-                            Join me on this exhilarating journey as we harness the power of innovation to create a world
-                            where possibilities are limitless.</p>
-                        </em></p>
-
-                    </div>
-
-                    <h3 class="resume-title">Education</h3>
-                    <div class="resume-item">
-                        <h4>Bachelor of Science in Information Systems Engineering </h4>
-                        <h5>2020 - 2024</h5>
-                        <p><em>Piri Reis University</em></p>
-                        <p><b>Programming Fundamentals: </b>Python, C/C++, Java, HTML/CSS, JavaScript, Django,
-                            Object-Oriented Programming, Visual Programming, Advanced Web Development</p>
-                        <p><b>Mathematics and Problem Solving: </b>Data Structures, Algorithms, Linear Algebra,
-                            Probability and Statistics, Ordinary and Partial Differential Equations</p>
-                        <p><b>System Fundamentals and Specializations: </b>Computer Networks and Internet, Database
-                            Management Systems (SQL), Operating Systems, Cybersecurity, Computer Architecture</p>
-                        <p><b>Advanced Topics: </b>Artificial Intelligence, Machine Learning, Software Quality Assurance
-                            and Testing High, Data Mining, Web Programming, System Analysis and Design,
-                            Entrepreneurship, Digital Image Processing, Computer Vision, Analytical Thinking and Problem
-                            Solving Techniques, Advanced Web Programming</p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <h3 class="resume-title">Professional Experience</h3>
-                    <div class="resume-item">
-                        <h4>IT Support Specialist</h4>
-                        <h5>August 2022 - August 2024</h5>
-                        <p><em>SIEMENS</em></p>
-                        <p>
-                        <ul>
-                            <li>Provided comprehensive IT user support to ensure the smooth operation of internal
-                                systems and processes.
-                            </li>
-                            <li>Conducted regular maintenance of hardware and software, including computers, servers,
-                                and printers, to uphold optimal functionality.
-                            </li>
-                            <li>Ensured compliance with IT policies and regulations, maintaining up-to-date IT systems
-                                and procedures in alignment with industry standards.
-                            </li>
-                            <li>Supported the procurement process for IT equipment, software, and services, contributing
-                                to efficient resource allocation.
-                            </li>
-                            <li>Developed and implemented automation scripts for routine IT tasks, enhancing operational
-                                efficiency.
-                            </li>
-                            <li>Assisted in network administration tasks, including troubleshooting network issues and
-                                ensuring robust cybersecurity measures.
-                            </li>
-                            <li>Maintained accurate inventories of software and hardware assets, updating documentation
-                                as necessary.
-                            </li>
-                            <li>Provided technical support during events and workshops, ensuring seamless IT
-                                operations.
-                            </li>
-                            <li>Actively participated in knowledge sharing activities, including organizing training
-                                sessions on IT topics for colleagues.
-                            </li>
-                        </ul>
-
-                    </div>
-                    <div class="resume-item">
-                        <h4>Software Developer Engineer</h4>
-                        <h5>August 2024 - Present</h5>
-                        <p><em>SIEMENS</em></p>
-                        <p>
-                        <ul>
-                            <li>Provided comprehensive IT user support to ensure the smooth operation of internal
-                                systems and processes.
-                            </li>
-                            <li>Conducted regular maintenance of hardware and software, including computers, servers,
-                                and printers, to uphold optimal functionality.
-                            </li>
-                            <li>Ensured compliance with IT policies and regulations, maintaining up-to-date IT systems
-                                and procedures in alignment with industry standards.
-                            </li>
-                            <li>Supported the procurement process for IT equipment, software, and services, contributing
-                                to efficient resource allocation.
-                            </li>
-                            <li>Developed and implemented automation scripts for routine IT tasks, enhancing operational
-                                efficiency.
-                            </li>
-                            <li>Assisted in network administration tasks, including troubleshooting network issues and
-                                ensuring robust cybersecurity measures.
-                            </li>
-                            <li>Maintained accurate inventories of software and hardware assets, updating documentation
-                                as necessary.
-                            </li>
-                            <li>Provided technical support during events and workshops, ensuring seamless IT
-                                operations.
-                            </li>
-                            <li>Actively participated in knowledge sharing activities, including organizing training
-                                sessions on IT topics for colleagues.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section><!-- End My Resume Section -->
-
-    <!-- ======= My Services Section ======= -->
-    <section id="services" class="services">
-        <div class="container">
-
-            <div class="section-title">
-                <span>My Skills</span>
-                <h2>My Skills</h2>
-                <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
-            </div>
-
-            <div class="row">
-                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                        <h4 class="title"><a href="">Development</a></h4>
-                        <p class="description">
-                            HTML5<br>
-                            CSS3<br>
-                            JavaScript<br>
-                            React.js<br>
-                            Version Control:Git<br>
-                            UI/UX Design<br>
-                            Responsive Design<br>
-                            Cross-Browser Compatibility<br>
-                            Testing Frameworks<br>
-                            Debugging </p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bx-file"></i></div>
-                        <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-                        <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                            dolore eu fugiat nulla pariatur</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bx-tachometer"></i></div>
-                        <h4 class="title"><a href="">Magni Dolores</a></h4>
-                        <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                            deserunt mollit anim id est laborum</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bx-world"></i></div>
-                        <h4 class="title"><a href="">Nemo Enim</a></h4>
-                        <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                            praesentium voluptatum deleniti atque</p>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section><!-- End My Services Section -->
-
-    <!-- ======= Testimonials Section ======= -->
+    <!-- ======= References Section ======= -->
     <section id="testimonials" class="testimonials">
         <div class="container position-relative">
 
@@ -401,7 +272,7 @@
                                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                             </p>
                         </div>
-                    </div><!-- End testimonial item -->
+                    </div><!-- End references item -->
 
                     <div class="swiper-slide">
                         <div class="testimonial-item">
@@ -416,36 +287,7 @@
                                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                             </p>
                         </div>
-                    </div><!-- End testimonial item -->
-
-                    <div class="swiper-slide">
-                        <div class="testimonial-item">
-                            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                            <h3>Mehmet Cubukçuğlu</h3>
-                            <h4>ICT Manager @UNDP</h4>
-                            <p>
-                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam
-                                duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                            </p>
-                        </div>
-                    </div><!-- End testimonial item -->
-
-                    <div class="swiper-slide">
-                        <div class="testimonial-item">
-                            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                            <h3>Anıl Sönmez</h3>
-                            <h4>ICT Assistant @UNDP</h4>
-                            <p>
-                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat
-                                minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore
-                                labore illum veniam.
-                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                            </p>
-                        </div>
-                    </div><!-- End testimonial item -->
+                    </div><!-- End reference item -->
 
                     <div class="swiper-slide">
                         <div class="testimonial-item">
@@ -460,243 +302,111 @@
                                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                             </p>
                         </div>
-                    </div><!-- End testimonial item -->
+                    </div><!-- End reference item -->
 
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
 
         </div>
-    </section><!-- End Testimonials Section -->
+    </section><!-- End References Section -->
 
-    <!-- ======= My Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
+ <!-- ======= My Portfolio Section ======= -->
+<section id="portfolio" class="portfolio">
+    <div class="container">
 
-            <div class="section-title">
-                <span>My Portfolio</span>
-                <h2>My Portfolio</h2>
-                <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+        <div class="section-title">
+            <span>My Portfolio</span>
+            <h2>My Portfolio</h2>
+            <p>Explore some of my latest projects and works.</p>
+        </div>
+
+        <ul id="portfolio-flters" class="d-flex justify-content-center">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-web">Web</li>
+        </ul>
+
+        <div class="row portfolio-container">
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></div>
+                <div class="portfolio-info">
+                    <h4>Digital Solidarity Platform: Fur-Ever Friends</h4>
+                    <p>Web</p>
+                    <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Digital Solidarity Platform: Fur-Ever Friends"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                    <div class="portfolio-details">
+                        <h5>Application Features:</h5>
+                        <ul>
+                            <li>Adoption Module: Facilitates the adoption process for homeless animals.</li>
+                            <li>Volunteering Opportunities: Allows users to take proactive steps in animal care.</li>
+                            <li>Shelter Promotion: Increases awareness of shelters and their activities.</li>
+                            <li>User Communication: Fosters user interaction and community engagement.</li>
+                            <li>Event Updates and Notifications: Provides timely updates on events and campaigns.</li>
+                            <li>Q&A Section: Facilitates knowledge exchange on animal care.</li>
+                        </ul>
+                        <p>Developed a digital solidarity platform using Django, Vue3, Django REST Framework, and Tailwind CSS to promote animal welfare and community engagement. This project showcases my technical skills and project management abilities while contributing to the mission of promoting animal welfare.</p>
+                    </div>
+                </div>
             </div>
 
-            <ul id="portfolio-flters" class="d-flex justify-content-center">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-app">App</li>
-                <li data-filter=".filter-card">Card</li>
-                <li data-filter=".filter-web">Web</li>
-            </ul>
-
-            <div class="row portfolio-container">
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
-                           class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                class="bx bx-link"></i></a>
-                    </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt=""></div>
+                <div class="portfolio-info">
+                    <h4>E-commerce Website</h4>
+                    <p>Web</p>
+                    <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="E-commerce Website"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
+            </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>Web 3</h4>
-                        <p>Web</p>
-                        <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"
-                           class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                class="bx bx-link"></i></a>
-                    </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt=""></div>
+                <div class="portfolio-info">
+                    <h4>Fitness Tracking App</h4>
+                    <p>App</p>
+                    <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Fitness Tracking App"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
+            </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>App 2</h4>
-                        <p>App</p>
-                        <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
-                           class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                class="bx bx-link"></i></a>
-                    </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt=""></div>
+                <div class="portfolio-info">
+                    <h4>Personal Blog</h4>
+                    <p>Web</p>
+                    <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Personal Blog"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
+            </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                    <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>Card 2</h4>
-                        <p>Card</p>
-                        <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
-                           class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                class="bx bx-link"></i></a>
-                    </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt=""></div>
+                <div class="portfolio-info">
+                    <h4>Travel Booking App</h4>
+                    <p>App</p>
+                    <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Travel Booking App"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
+            </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>Web 2</h4>
-                        <p>Web</p>
-                        <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery"
-                           class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                class="bx bx-link"></i></a>
-                    </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""></div>
+                <div class="portfolio-info">
+                    <h4>Corporate Website</h4>
+                    <p>Web</p>
+                    <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Corporate Website"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>App 3</h4>
-                        <p>App</p>
-                        <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
-                           class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                class="bx bx-link"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                    <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>Card 1</h4>
-                        <p>Card</p>
-                        <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
-                           class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                class="bx bx-link"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                    <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>Card 3</h4>
-                        <p>Card</p>
-                        <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
-                           class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                class="bx bx-link"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>Web 3</h4>
-                        <p>Web</p>
-                        <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
-                           class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                class="bx bx-link"></i></a>
-                    </div>
-                </div>
-
             </div>
 
         </div>
-    </section><!-- End My Portfolio Section -->
 
-
-    <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing">
-        <div class="container">
-
-            <div class="section-title">
-                <span>Pricing</span>
-                <h2>Pricing</h2>
-                <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
-            </div>
-
-            <div class="row">
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="box">
-                        <h3>Free</h3>
-                        <h4><sup>$</sup>0<span> / month</span></h4>
-                        <ul>
-                            <li>Aida dere</li>
-                            <li>Nec feugiat nisl</li>
-                            <li>Nulla at volutpat dola</li>
-                            <li class="na">Pharetra massa</li>
-                            <li class="na">Massa ultricies mi</li>
-                        </ul>
-                        <div class="btn-wrap">
-                            <a href="#" class="btn-buy">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
-                    <div class="box featured">
-                        <h3>Business</h3>
-                        <h4><sup>$</sup>19<span> / month</span></h4>
-                        <ul>
-                            <li>Aida dere</li>
-                            <li>Nec feugiat nisl</li>
-                            <li>Nulla at volutpat dola</li>
-                            <li>Pharetra massa</li>
-                            <li class="na">Massa ultricies mi</li>
-                        </ul>
-                        <div class="btn-wrap">
-                            <a href="#" class="btn-buy">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-                    <div class="box">
-                        <h3>Developer</h3>
-                        <h4><sup>$</sup>29<span> / month</span></h4>
-                        <ul>
-                            <li>Aida dere</li>
-                            <li>Nec feugiat nisl</li>
-                            <li>Nulla at volutpat dola</li>
-                            <li>Pharetra massa</li>
-                            <li>Massa ultricies mi</li>
-                        </ul>
-                        <div class="btn-wrap">
-                            <a href="#" class="btn-buy">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-                    <div class="box">
-                        <span class="advanced">Advanced</span>
-                        <h3>Ultimate</h3>
-                        <h4><sup>$</sup>49<span> / month</span></h4>
-                        <ul>
-                            <li>Aida dere</li>
-                            <li>Nec feugiat nisl</li>
-                            <li>Nulla at volutpat dola</li>
-                            <li>Pharetra massa</li>
-                            <li>Massa ultricies mi</li>
-                        </ul>
-                        <div class="btn-wrap">
-                            <a href="#" class="btn-buy">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section><!-- End Pricing Section -->
-
+    </div>
+</section><!-- End My Portfolio Section -->
+    
+    
     <!-- ======= Contact Me Section ======= -->
     <section id="contact" class="contact">
         <div class="container">
@@ -787,7 +497,7 @@
 <!-- ======= Footer ======= -->
 <footer id="footer">
     <div class="container">
-        <h3>Sueda Bıçaklıoğlu</h3>
+        <h3>{{ name }}</h3>
         <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi
             placeat.</p>
         <div class="social-links">
