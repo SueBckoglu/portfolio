@@ -1,8 +1,3 @@
-FROM ubuntu:latest
-LABEL authors="suedabicaklioglu"
-
-ENTRYPOINT ["top", "-b"]
-
 # pull official base image
 FROM python:3.12-slim
 
