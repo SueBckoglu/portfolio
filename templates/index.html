@@ -85,28 +85,28 @@
                         <div class="col-lg-6">
                             <ul>
                                 <li><i class="bi bi-chevron-right"></i> <strong>Name:</strong> <span>{{ name }}</span></li>
-                                <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.suedabicaklioglu.com</span></li>
-                                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+90 531 933 12 72</span></li>
-                                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Istanbul, Turkey</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>{{ website }}</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>{{ phone }}</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>{{ city }}</span></li>
                             </ul>
                         </div>
                         <div class="col-lg-6">
                             <ul>
-                                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
-                                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor</span></li>
-                                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>suebckoglu@gmail.com</span></li>
-                                <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>{{ age }}</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>{{ degree }}</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>{{ email }}</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>{{ freelance_status }}</span></li>
                             </ul>
                         </div>
                     </div>
                     <div class="row mt-4 ml-4 mr-4">
                         <div class="resume-item pb-0">
                             <p><em>
-                                Hello! I'm {{ name }}, a spirited Information Systems Engineering student hailing from the vibrant city of Istanbul, Turkey.<br><br>
-                                I'm fueled by an unwavering passion for software development and IT support. It's not just a career path for me; it's a journey driven by my insatiable curiosity to delve into the realms of new technologies and my heartfelt desire to leverage them for creating a positive impact.<br><br>
-                                My academic voyage has been a thrilling ride, punctuated by countless programming projects and hands-on experiences. Whether it's coding late into the night or troubleshooting tech dilemmas, I've embraced each challenge with open arms. My time as an IT Support Professional at Siemens has been particularly enriching, allowing me to blend theoretical knowledge with real-world problem-solving skills.<br><br>
-                                What keeps me going is the boundless enthusiasm to learn and grow in the ever-evolving landscape of information technology. I'm a firm believer in the power of continuous improvement, always on the lookout for opportunities to sharpen my skills and contribute meaningfully to groundbreaking projects.<br><br>
-                                Beyond the world of tech, my heart finds solace in the companionship of two adorable creatures – Chloe, my faithful dog, and Bulut, my playful cat. As an only child, my upbringing has been enriched by the unconditional love and support of my doting parents, who have been my pillars of strength every step of the way.<br><br>
+                                Hello! I'm Sueda Bıçaklıoğlu, a spirited Information Systems Engineering student hailing from the vibrant city of Istanbul, Turkey.
+                                I'm fueled by an unwavering passion for software development and IT support. It's not just a career path for me; it's a journey driven by my insatiable curiosity to delve into the realms of new technologies and my heartfelt desire to leverage them for creating a positive impact.
+                                My academic voyage has been a thrilling ride, punctuated by countless programming projects and hands-on experiences. Whether it's coding late into the night or troubleshooting tech dilemmas, I've embraced each challenge with open arms. My time as an IT Support Professional at Siemens has been particularly enriching, allowing me to blend theoretical knowledge with real-world problem-solving skills.
+                                What keeps me going is the boundless enthusiasm to learn and grow in the ever-evolving landscape of information technology. I'm a firm believer in the power of continuous improvement, always on the lookout for opportunities to sharpen my skills and contribute meaningfully to groundbreaking projects.
+                                Beyond the world of tech, my heart finds solace in the companionship of two adorable creatures – Chloe, my faithful dog, and Bulut, my playful cat. As an only child, my upbringing has been enriched by the unconditional love and support of my doting parents, who have been my pillars of strength every step of the way.
                                 In a nutshell, I'm a dreamer, a doer, and a firm believer in the transformative potential of technology to shape a brighter tomorrow. Join me on this exhilarating journey as we harness the power of innovation to create a world where possibilities are limitless.
                             </em></p>
                         </div>
@@ -117,6 +117,9 @@
 
     </div>
 </section><!-- End About Me Section -->
+
+
+
 
    <!-- ======= My Resume Section ======= -->
 <section id="resume" class="resume">
@@ -131,34 +134,25 @@
         <div class="row">
             <div class="col-lg-6">
                 <h3 class="resume-title">Education</h3>
+                {% for education in educations %}
                 <div class="resume-item">
-                    <h4>Bachelor of Science in Information Systems Engineering</h4>
-                    <h5>2020 - 2024</h5>
-                    <p><em>Piri Reis University</em></p>
-                    <p><strong>Programming Fundamentals: </strong>Python, C/C++, Java, HTML/CSS, JavaScript, Django, Object-Oriented Programming, Visual Programming, Advanced Web Development</p>
-                    <p><strong>Mathematics and Problem Solving: </strong>Data Structures, Algorithms, Linear Algebra, Probability and Statistics, Ordinary and Partial Differential Equations</p>
-                    <p><strong>System Fundamentals and Specializations: </strong>Computer Networks and Internet, Database Management Systems (SQL), Operating Systems, Cybersecurity, Computer Architecture</p>
-                    <p><strong>Advanced Topics: </strong>Artificial Intelligence, Machine Learning, Software Quality Assurance and Testing, Data Mining, Web Programming, System Analysis and Design, Entrepreneurship, Digital Image Processing, Computer Vision, Analytical Thinking and Problem Solving Techniques, Advanced Web Programming</p>
+                    <h4>{{ education.department }}</h4>
+                    <h5>{{ education.start_date|date:"Y" }} - {{ education.end_date|date:"Y" }}</h5>
+                    <p><em>{{ education.school_name }}</em></p>
+                    <p>{{ education.courses|linebreaks }}</p>
                 </div>
+                {% endfor %}
             </div>
             <div class="col-lg-6">
                 <h3 class="resume-title">Professional Experience</h3>
+                {% for experience in experiences %}
                 <div class="resume-item">
-                    <h4>IT Support Specialist</h4>
-                    <h5>August 2022 - August 2024</h5>
-                    <p><em>SIEMENS</em></p>
-                    <ul>
-                        <li>Provided comprehensive IT user support to ensure the smooth operation of internal systems and processes.</li>
-                        <li>Conducted regular maintenance of hardware and software, including computers, servers, and printers, to uphold optimal functionality.</li>
-                        <li>Ensured compliance with IT policies and regulations, maintaining up-to-date IT systems and procedures in alignment with industry standards.</li>
-                        <li>Supported the procurement process for IT equipment, software, and services, contributing to efficient resource allocation.</li>
-                        <li>Developed and implemented automation scripts for routine IT tasks, enhancing operational efficiency.</li>
-                        <li>Assisted in network administration tasks, including troubleshooting network issues and ensuring robust cybersecurity measures.</li>
-                        <li>Maintained accurate inventories of software and hardware assets, updating documentation as necessary.</li>
-                        <li>Provided technical support during events and workshops, ensuring seamless IT operations.</li>
-                        <li>Actively participated in knowledge sharing activities, including organizing training sessions on IT topics for colleagues.</li>
-                    </ul>
+                    <h4>{{ experience.job_title }}</h4>
+                    <h5>{{ experience.start_date|date:"F Y" }} - {{ experience.end_date|date:"F Y" }}</h5>
+                    <p><em>{{ experience.company_name }}</em></p>
+                    <p>{{ experience.job_description|linebreaks }}</p>
                 </div>
+                {% endfor %}
             </div>
         </div>
 
@@ -184,9 +178,8 @@
                 </div>
                 {% for skill in frontend_skills %}
                 <div class="icon-box">
-                    <div class="icon"><i class="{{ skill.icon }}"></i></div>
+                    <div><i class="bx bxl-html5"></i></div>
                     <h4 class="title"><a href="">{{ skill.name }}</a></h4>
-                    <p class="description">{{ skill.description }}</p>
                 </div>
                 {% endfor %}
             </div>
@@ -198,9 +191,8 @@
                 </div>
                 {% for skill in backend_skills %}
                 <div class="icon-box">
-                    <div class="icon"><i class="{{ skill.icon }}"></i></div>
+                    <div><i class="bx bx-server"></i></div>
                     <h4 class="title"><a href="">{{ skill.name }}</a></h4>
-                    <p class="description">{{ skill.description }}</p>
                 </div>
                 {% endfor %}
             </div>
@@ -212,9 +204,8 @@
                 </div>
                 {% for skill in programming_skills %}
                 <div class="icon-box">
-                    <div class="icon"><i class="{{ skill.icon }}"></i></div>
+                    <div><i class="bx bx-code"></i></div>
                     <h4 class="title"><a href="">{{ skill.name }}</a></h4>
-                    <p class="description">{{ skill.description }}</p>
                 </div>
                 {% endfor %}
             </div>
@@ -226,9 +217,8 @@
                 </div>
                 {% for skill in soft_skills %}
                 <div class="icon-box">
-                    <div class="icon"><i class="{{ skill.icon }}"></i></div>
+                    <div><i class="bx bx-user"></i></div>
                     <h4 class="title"><a href="">{{ skill.name }}</a></h4>
-                    <p class="description">{{ skill.description }}</p>
                 </div>
                 {% endfor %}
             </div>
@@ -237,161 +227,63 @@
     </div>
 </section><!-- End My Skills Section -->
 
+   <!-- ======= References Section ======= -->
+<section id="testimonials" class="testimonials">
+    <div class="container position-relative">
 
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
 
-    <!-- ======= References Section ======= -->
-    <section id="testimonials" class="testimonials">
-        <div class="container position-relative">
+                {% for reference in references %}
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <img src="assets/img/testimonials/testimonials-{{ forloop.counter }}.jpg" class="testimonial-img" alt="">
+                        <h3>{{ reference.ref_name }}</h3>
+                        <h4>{{ reference.ref_job }} @{{ reference.ref_company }}</h4>
+                        <p>
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                            {{ reference.ref_comment }}
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div><!-- End reference item -->
+                {% endfor %}
 
-            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide">
-                        <div class="testimonial-item">
-                            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                            <h3>Erhan Ateşer</h3>
-                            <h4>IT Operations Professional & DevOps Engineer @SIEMENS</h4>
-                            <p>
-                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
-                                rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-                                risus at semper.
-                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                            </p>
-                        </div>
-                    </div><!-- End references item -->
-
-                    <div class="swiper-slide">
-                        <div class="testimonial-item">
-                            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                            <h3>Seda Arslan</h3>
-                            <h4>R&D Team Assistant @SIEMENS</h4>
-                            <p>
-                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid
-                                cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet
-                                legam anim culpa.
-                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                            </p>
-                        </div>
-                    </div><!-- End reference item -->
-
-                    <div class="swiper-slide">
-                        <div class="testimonial-item">
-                            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                            <h3>Yasin Bahçeci</h3>
-                            <h4>IT Operations Specialist @SIEMENS</h4>
-                            <p>
-                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
-                                veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
-                                culpa fore nisi cillum quid.
-                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                            </p>
-                        </div>
-                    </div><!-- End reference item -->
-
-                </div>
-                <div class="swiper-pagination"></div>
             </div>
-
+            <div class="swiper-pagination"></div>
         </div>
-    </section><!-- End References Section -->
+
+    </div>
+</section><!-- End References Section -->
 
  <!-- ======= My Portfolio Section ======= -->
 <section id="portfolio" class="portfolio">
     <div class="container">
 
         <div class="section-title">
-            <span>My Portfolio</span>
             <h2>My Portfolio</h2>
             <p>Explore some of my latest projects and works.</p>
         </div>
 
-        <ul id="portfolio-flters" class="d-flex justify-content-center">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-web">Web</li>
-        </ul>
-
         <div class="row portfolio-container">
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></div>
+            {% for project in projects %}
+            <div class="col-lg-4 col-md-6 portfolio-item">
+                <div class="portfolio-img"><img src="{{ project.image.url }}" class="img-fluid" alt="{{ project.project_name }}"></div>
                 <div class="portfolio-info">
-                    <h4>Digital Solidarity Platform: Fur-Ever Friends</h4>
-                    <p>Web</p>
-                    <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Digital Solidarity Platform: Fur-Ever Friends"><i class="bx bx-plus"></i></a>
-                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                    <div class="portfolio-details">
-                        <h5>Application Features:</h5>
-                        <ul>
-                            <li>Adoption Module: Facilitates the adoption process for homeless animals.</li>
-                            <li>Volunteering Opportunities: Allows users to take proactive steps in animal care.</li>
-                            <li>Shelter Promotion: Increases awareness of shelters and their activities.</li>
-                            <li>User Communication: Fosters user interaction and community engagement.</li>
-                            <li>Event Updates and Notifications: Provides timely updates on events and campaigns.</li>
-                            <li>Q&A Section: Facilitates knowledge exchange on animal care.</li>
-                        </ul>
-                        <p>Developed a digital solidarity platform using Django, Vue3, Django REST Framework, and Tailwind CSS to promote animal welfare and community engagement. This project showcases my technical skills and project management abilities while contributing to the mission of promoting animal welfare.</p>
-                    </div>
+                    <h3>{{ project.project_name }}</h3>
+                    <p>{{ project.project_type }}</p>
+                    <a href="{{ project.image.url }}" class="preview-link" title="{{ project.project_name }}"><i class="bx bx-plus"></i> View Image</a>
+                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i> More Details</a>
                 </div>
             </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt=""></div>
-                <div class="portfolio-info">
-                    <h4>E-commerce Website</h4>
-                    <p>Web</p>
-                    <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="E-commerce Website"><i class="bx bx-plus"></i></a>
-                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt=""></div>
-                <div class="portfolio-info">
-                    <h4>Fitness Tracking App</h4>
-                    <p>App</p>
-                    <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Fitness Tracking App"><i class="bx bx-plus"></i></a>
-                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt=""></div>
-                <div class="portfolio-info">
-                    <h4>Personal Blog</h4>
-                    <p>Web</p>
-                    <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Personal Blog"><i class="bx bx-plus"></i></a>
-                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt=""></div>
-                <div class="portfolio-info">
-                    <h4>Travel Booking App</h4>
-                    <p>App</p>
-                    <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Travel Booking App"><i class="bx bx-plus"></i></a>
-                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""></div>
-                <div class="portfolio-info">
-                    <h4>Corporate Website</h4>
-                    <p>Web</p>
-                    <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Corporate Website"><i class="bx bx-plus"></i></a>
-                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-            </div>
-
+            {% endfor %}
         </div>
 
     </div>
-</section><!-- End My Portfolio Section -->
+</section>
+<!-- End My Portfolio Section -->
+
+
 
 
     <!-- ======= Contact Me Section ======= -->
