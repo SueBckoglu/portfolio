@@ -1,11 +1,3 @@
-/**
-* Template Name: Laura
-* Template URL: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/
-* Updated: Mar 17 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -15,22 +7,13 @@ body {
 }
 
 a {
-  color: #ffb727;
+  color: #ff7edb; /* Sarı renk yerine pembe renk */
   text-decoration: none;
 }
 
 a:hover {
-  color: #ffc85a;
+  color: #ffabe9; /* Sarı renk yerine pembe renk */
   text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Raleway", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -43,7 +26,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #ffb727;
+  background: #ff7edb; /* Sarı renk yerine pembe renk */
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -57,7 +40,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #ffc550;
+  background: #ffabe9; /* Sarı renk yerine pembe renk */
   color: #fff;
 }
 
@@ -89,7 +72,7 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -134,7 +117,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #ffb727;
+  color: #ff7edb; /* Sarı renk yerine pembe renk */
 }
 
 .navbar .dropdown ul {
@@ -173,7 +156,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #ffb727;
+  color: #ff7edb; /* Sarı renk yerine pembe renk */
 }
 
 .navbar .dropdown:hover>ul {
@@ -206,7 +189,7 @@ h6 {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   color: #fff;
@@ -269,7 +252,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #ffb727;
+  color: #ff7edb; /* Sarı renk yerine pembe renk */
 }
 
 .navbar-mobile .getstarted,
@@ -290,26 +273,7 @@ h6 {
 }
 
 .navbar-mobile .dropdown ul li {
-  min-width: 200px;
-}
-
-.navbar-mobile .dropdown ul a {
-  padding: 10px 20px;
-}
-
-.navbar-mobile .dropdown ul a i {
-  font-size: 12px;
-}
-
-.navbar-mobile .dropdown ul a:hover,
-.navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
-  color: #ffb727;
-}
-
-.navbar-mobile .dropdown>.dropdown-active {
-  display: block;
-}
+  min-width: 200px
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -321,6 +285,7 @@ h6 {
   background-size: cover;
   position: relative;
 }
+
 
 #hero:before {
   content: "";
@@ -349,7 +314,7 @@ h6 {
   margin: 0 0 10px 0;
   font-size: 64px;
   font-family: "Satisfy", serif;
-  color: #fff;
+  color: #ff7edb; /* Sarı renk yerine pembe renk */
 }
 
 #hero h2 {
@@ -425,7 +390,7 @@ section {
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #3b434a;
+  color: #ff7edb; /* Sarı renk yerine pembe renk */
   position: relative;
   z-index: 2;
 }
@@ -521,80 +486,30 @@ section {
     display: inline-block;
   }
 }
-
 /*--------------------------------------------------------------
 # About Me
 --------------------------------------------------------------*/
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #3b434a;
+  color: #ff7edb; /* Sarı renk yerine pembe renk */
   text-transform: uppercase;
 }
 
-.about .content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.about .content ul li {
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-}
-
-.about .content ul strong {
-  margin-right: 10px;
-}
-
 .about .content ul i {
-  font-size: 16px;
-  margin-right: 5px;
-  color: #ffb727;
-  line-height: 0;
-}
-
-.about .content p:last-child {
-  margin-bottom: 0;
-}
-
-.about .content .count-box {
-  width: 100%;
+  color: #ff7edb; /* Sarı renk yerine pembe renk */
 }
 
 .about .content .count-box i {
-  display: block;
-  font-size: 36px;
-  color: #ffb727;
-  float: left;
-  line-height: 0;
+  color: #ff7edb; /* Sarı renk yerine pembe renk */
 }
 
 .about .content .count-box span {
-  font-size: 36px;
-  line-height: 30px;
-  display: block;
-  font-weight: 700;
   color: #3b434a;
-  margin-left: 50px;
-}
-
-.about .content .count-box p {
-  padding: 15px 0 0 0;
-  margin: 0 0 0 50px;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  color: #5d6a75;
 }
 
 .about .content .count-box a {
-  font-weight: 600;
-  display: block;
-  margin-top: 20px;
   color: #5d6a75;
-  font-size: 15px;
-  font-family: "Satisfy", serif;
-  transition: ease-in-out 0.3s;
 }
 
 .about .content .count-box a:hover {
@@ -607,100 +522,30 @@ section {
   min-height: 500px;
 }
 
-.about .skills-content {
-  margin-top: 30px;
-}
-
-.about .skills-content .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
-}
-
 .about .skills-content .progress .skill {
-  padding: 10px 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 700;
-  font-family: "Raleway", sans-serif;
   color: #3b434a;
 }
 
-.about .skills-content .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-
-.about .skills-content .progress-bar-wrap {
-  background: #e6e8eb;
-}
-
 .about .skills-content .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: #ffb727;
+  background-color: #ff7edb; /* Sarı renk yerine pembe renk */
 }
 
 /*--------------------------------------------------------------
 # My Resume
 --------------------------------------------------------------*/
 .resume .resume-title {
-  font-size: 26px;
-  font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
   color: #3b434a;
 }
 
-.resume .resume-item {
-  padding: 0 0 20px 20px;
-  margin-top: -2px;
-  border-left: 2px solid #82909c;
-  position: relative;
-}
-
 .resume .resume-item h4 {
-  line-height: 18px;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #ffb727;
-  margin-bottom: 10px;
+  color: #ff7edb; /* Sarı renk yerine pembe renk */
 }
 
 .resume .resume-item h5 {
-  font-size: 16px;
   background: #eef0f2;
-  padding: 5px 15px;
-  display: inline-block;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.resume .resume-item ul {
-  padding-left: 20px;
-}
-
-.resume .resume-item ul li {
-  padding-bottom: 10px;
-}
-
-.resume .resume-item:last-child {
-  padding-bottom: 0;
 }
 
 .resume .resume-item::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
-  background: #fff;
   border: 2px solid #82909c;
 }
 
@@ -708,48 +553,21 @@ section {
 # My Services
 --------------------------------------------------------------*/
 .services .icon-box {
-  padding: 30px;
-  position: relative;
-  overflow: hidden;
   background: #fff;
   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
-  transition: all 0.3s ease-in-out;
-  text-align: center;
   border: 1px solid #fff;
 }
 
 .services .icon {
-  margin: 0 auto 20px auto;
-  padding-top: 17px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  width: 72px;
-  height: 72px;
   background: #fff4df;
 }
 
 .services .icon i {
-  font-size: 36px;
-  line-height: 1;
-  color: #ffb727;
+  color: #ff7edb; /* Sarı renk yerine pembe renk */
 }
 
 .services .title {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-.services .title a {
   color: #111;
-  transition: 0.3s;
-}
-
-.services .description {
-  font-size: 15px;
-  line-height: 28px;
-  margin-bottom: 0;
 }
 
 .services .icon-box:hover {
@@ -765,7 +583,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("../img/testimonials-bg.jpg") no-repeat;
+  background: url("../img/bg.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -783,11 +601,6 @@ section {
 
 .testimonials .section-header {
   margin-bottom: 40px;
-}
-
-.testimonials .testimonials-carousel,
-.testimonials .testimonials-slider {
-  overflow: hidden;
 }
 
 .testimonials .testimonial-item {
@@ -811,8 +624,8 @@ section {
 
 .testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: #ddd;
   margin: 0 0 15px 0;
+  color: #ddd;
 }
 
 .testimonials .testimonial-item .quote-icon-left,
@@ -856,38 +669,11 @@ section {
   background-color: #ffb727;
 }
 
-@media (min-width: 992px) {
-  .testimonials .testimonial-item p {
-    width: 80%;
-  }
-}
-
 /*--------------------------------------------------------------
 # My Portfolio
 --------------------------------------------------------------*/
-.portfolio #portfolio-flters {
-  list-style: none;
-  margin-bottom: 20px;
-}
-
-.portfolio #portfolio-flters li {
-  cursor: pointer;
-  display: inline-block;
-  margin: 0 10px 10px 10px;
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 1;
-  padding: 7px 10px;
-  text-transform: uppercase;
-  color: #444444;
-  transition: all 0.3s ease-in-out;
-  border: 2px solid #fff;
-}
-
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
-  color: #f3a200;
-  border-color: #ffb727;
+.portfolio {
+  padding: 80px 0;
 }
 
 .portfolio .portfolio-item {
@@ -896,6 +682,7 @@ section {
 
 .portfolio .portfolio-item .portfolio-img {
   overflow: hidden;
+  position: relative;
 }
 
 .portfolio .portfolio-item .portfolio-img img {
@@ -905,21 +692,20 @@ section {
 .portfolio .portfolio-item .portfolio-info {
   opacity: 0;
   position: absolute;
-  left: 15px;
+  left: 0;
   bottom: 0;
   z-index: 3;
-  right: 15px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
   transition: all ease-in-out 0.3s;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 10px 15px;
 }
 
 .portfolio .portfolio-item .portfolio-info h4 {
   font-size: 18px;
-  color: #fff;
   font-weight: 600;
+  margin-bottom: 10px;
   color: #fff;
-  margin-bottom: 0px;
 }
 
 .portfolio .portfolio-item .portfolio-info p {
@@ -930,10 +716,7 @@ section {
 
 .portfolio .portfolio-item .portfolio-info .preview-link,
 .portfolio .portfolio-item .portfolio-info .details-link {
-  position: absolute;
-  right: 40px;
   font-size: 24px;
-  top: calc(50% - 18px);
   color: #fff;
   transition: 0.3s;
 }
@@ -943,191 +726,12 @@ section {
   color: #ffc041;
 }
 
-.portfolio .portfolio-item .portfolio-info .details-link {
-  right: 10px;
-}
-
 .portfolio .portfolio-item:hover .portfolio-img img {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
-}
-
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 40px;
-}
-
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #ffb727;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #ffb727;
-}
-
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(59, 67, 74, 0.08);
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li+li {
-  margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
-}
-
-/*--------------------------------------------------------------
-# Pricing
---------------------------------------------------------------*/
-.pricing .box {
-  padding: 20px;
-  background: #fff;
-  text-align: center;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-}
-
-.pricing h3 {
-  font-weight: 400;
-  margin: -20px -20px 20px -20px;
-  padding: 20px 15px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #777777;
-  background: #f8f8f8;
-}
-
-.pricing h4 {
-  font-size: 36px;
-  color: #ffb727;
-  font-weight: 600;
-  font-family: "Open Sans", sans-serif;
-  margin-bottom: 20px;
-}
-
-.pricing h4 sup {
-  font-size: 20px;
-  top: -12px;
-  left: -3px;
-}
-
-.pricing h4 span {
-  color: #bababa;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.pricing ul {
-  padding: 0;
-  list-style: none;
-  color: #444444;
-  text-align: center;
-  line-height: 20px;
-  font-size: 14px;
-}
-
-.pricing ul li {
-  padding-bottom: 16px;
-}
-
-.pricing ul i {
-  color: #ffb727;
-  font-size: 18px;
-  padding-right: 4px;
-}
-
-.pricing ul .na {
-  color: #ccc;
-  text-decoration: line-through;
-}
-
-.pricing .btn-wrap {
-  margin: 20px -20px -20px -20px;
-  padding: 20px 15px;
-  background: #f8f8f8;
-  text-align: center;
-}
-
-.pricing .btn-buy {
-  background: #ffb727;
-  display: inline-block;
-  padding: 8px 35px;
-  border-radius: 4px;
-  color: #fff;
-  transition: none;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.pricing .btn-buy:hover {
-  background: #ffc85a;
-}
-
-.pricing .featured h3 {
-  color: #fff;
-  background: #ffb727;
-}
-
-.pricing .advanced {
-  width: 200px;
-  position: absolute;
-  top: 18px;
-  right: -68px;
-  transform: rotate(45deg);
-  z-index: 1;
-  font-size: 14px;
-  padding: 1px 0 3px 0;
-  background: #ffb727;
-  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -1142,7 +746,7 @@ section {
 
 .contact .info-box i.bx {
   font-size: 24px;
-  color: #ffb727;
+  color: #ff7edb; /* Pembe renk */
   border-radius: 50%;
   padding: 15px;
   background: #fff6e4;
@@ -1182,8 +786,8 @@ section {
 
 .contact .social-links a:hover {
   color: #fff;
-  border-color: #ffb727;
-  background: #ffb727;
+  border-color: #ff7edb; /* Pembe renk */
+  background: #ff7edb; /* Pembe renk */
 }
 
 .contact .php-email-form {
@@ -1249,7 +853,7 @@ section {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  background-color: #ffb727;
+  background-color: #ff7edb; /* Pembe renk */
 }
 
 .contact .php-email-form input {
@@ -1261,7 +865,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #ffb727;
+  background: #ff7edb; /* Pembe renk */
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1287,7 +891,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: url("../img/footer-bg.jpg") top center no-repeat;
+  background: url("../img/bg.jpg") top center no-repeat;
   background-size: cover;
   color: #fff;
   font-size: 14px;
@@ -1334,7 +938,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #ffb727;
+  background: #ff7edb; /* Pembe renk */
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1358,4 +962,5 @@ section {
 
 #footer .credits {
   font-size: 13px;
+}
 }
