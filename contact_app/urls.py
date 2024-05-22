@@ -1,7 +1,8 @@
+# contact/urls.py
+
 from django.urls import path
-from . import views
+from contact_app.views import contact_form  # Import the contact view function
 
 urlpatterns = [
-    path('contact/', views.contact_view, name='contact'),
-    # Add more URL patterns as needed
+    path('contact_form/', contact_form, name='k'),
 ]
