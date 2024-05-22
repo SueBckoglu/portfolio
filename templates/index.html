@@ -33,7 +33,7 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
-    
+
 </head>
 
 <body>
@@ -117,7 +117,7 @@
 
     </div>
 </section><!-- End About Me Section -->
-    
+
    <!-- ======= My Resume Section ======= -->
 <section id="resume" class="resume">
     <div class="container">
@@ -178,78 +178,65 @@
 
         <div class="row">
             <!-- Frontend Development Skills -->
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="icon-box">
-                    <div class="icon"><i class="bx bxl-html5"></i></div>
-                    <h4 class="title"><a href="">Frontend Development</a></h4>
-                    <p class="description">
-                        HTML5<br>
-                        CSS3<br>
-                        JavaScript<br>
-                        React.js<br>
-                        Vue.js<br>
-                        UI/UX Design<br>
-                        Responsive Design<br>
-                        Cross-Browser Compatibility<br>
-                        Web Performance Optimization
-                    </p>
+            <div class="col-md-6 col-lg-6">
+                <div class="section-title">
+                    <h3>Frontend Development</h3>
                 </div>
+                {% for skill in frontend_skills %}
+                <div class="icon-box">
+                    <div class="icon"><i class="{{ skill.icon }}"></i></div>
+                    <h4 class="title"><a href="">{{ skill.name }}</a></h4>
+                    <p class="description">{{ skill.description }}</p>
+                </div>
+                {% endfor %}
             </div>
 
-            <!-- Backend and DevOps Skills -->
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="icon-box">
-                    <div class="icon"><i class="bx bx-server"></i></div>
-                    <h4 class="title"><a href="">Backend & DevOps</a></h4>
-                    <p class="description">
-                        Django<br>
-                        SQL<br>
-                        Firebase<br>
-                        Docker<br>
-                        Kubernetes (familiar)<br>
-                        CI/CD (familiar with Jenkins)<br>
-                        Operating Systems: Windows, Linux, MacOS
-                    </p>
+            <!-- Backend Development Skills -->
+            <div class="col-md-6 col-lg-6">
+                <div class="section-title">
+                    <h3>Backend Development</h3>
                 </div>
+                {% for skill in backend_skills %}
+                <div class="icon-box">
+                    <div class="icon"><i class="{{ skill.icon }}"></i></div>
+                    <h4 class="title"><a href="">{{ skill.name }}</a></h4>
+                    <p class="description">{{ skill.description }}</p>
+                </div>
+                {% endfor %}
             </div>
 
             <!-- Programming & Scripting Skills -->
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="icon-box">
-                    <div class="icon"><i class="bx bx-code"></i></div>
-                    <h4 class="title"><a href="">Programming & Scripting</a></h4>
-                    <p class="description">
-                        Object Oriented Programming: Java<br>
-                        Scripting Languages: Python (familiar)<br>
-                        Version Control: Git, GitHub<br>
-                        Testing Frameworks<br>
-                        Debugging
-                    </p>
+            <div class="col-md-6 col-lg-6">
+                <div class="section-title">
+                    <h3>Programming & Scripting</h3>
                 </div>
+                {% for skill in programming_skills %}
+                <div class="icon-box">
+                    <div class="icon"><i class="{{ skill.icon }}"></i></div>
+                    <h4 class="title"><a href="">{{ skill.name }}</a></h4>
+                    <p class="description">{{ skill.description }}</p>
+                </div>
+                {% endfor %}
             </div>
 
             <!-- Professional & Soft Skills -->
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="icon-box">
-                    <div class="icon"><i class="bx bx-user"></i></div>
-                    <h4 class="title"><a href="">Professional & Soft Skills</a></h4>
-                    <p class="description">
-                        Agile Methodologies: Scrum, Kanban<br>
-                        Strong Team Collaboration<br>
-                        Adaptability<br>
-                        Strong Interpersonal Communication<br>
-                        Presentation Skills<br>
-                        Client Relationship Management<br>
-                        Managing Multiple Projects and Deadlines<br>
-                        Business Orientation with Strategic and Analytical Skills
-                    </p>
+            <div class="col-md-6 col-lg-6">
+                <div class="section-title">
+                    <h3>Professional & Soft Skills</h3>
                 </div>
+                {% for skill in soft_skills %}
+                <div class="icon-box">
+                    <div class="icon"><i class="{{ skill.icon }}"></i></div>
+                    <h4 class="title"><a href="">{{ skill.name }}</a></h4>
+                    <p class="description">{{ skill.description }}</p>
+                </div>
+                {% endfor %}
             </div>
-
         </div>
 
     </div>
 </section><!-- End My Skills Section -->
+
 
 
     <!-- ======= References Section ======= -->
@@ -405,8 +392,8 @@
 
     </div>
 </section><!-- End My Portfolio Section -->
-    
-    
+
+
     <!-- ======= Contact Me Section ======= -->
     <section id="contact" class="contact">
         <div class="container">
