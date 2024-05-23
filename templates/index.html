@@ -19,17 +19,31 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy"
           rel="stylesheet">
 
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
     <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <!-- Link to Bootstrap CSS file from CDN -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+    
+    <!-- Link to Bootstrap CSS file from CDN (Optional, if you prefer using CDN) -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Or reference the local Bootstrap CSS file -->
+    <!-- Template Main CSS File -->
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+<body>
+    <!-- Your content here -->
+</body>
+</html>
+
 
 
     <!-- Template Main CSS File -->
@@ -231,64 +245,60 @@
     </div>
 </section><!-- End My Skills Section -->
 
-   <!-- ======= References Section ======= -->
+<!-- ======= Testimonials Section ======= -->
 <section id="testimonials" class="testimonials">
     <div class="container position-relative">
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-            <div class="swiper-wrapper">
-
-                {% for reference in references %}
-                <div class="swiper-slide">
-                    <div class="testimonial-item">
-                        <img src="assets/img/testimonials/testimonials-{{ forloop.counter }}.jpg" class="testimonial-img" alt="">
-                        <h3>{{ reference.ref_name }}</h3>
-                        <h4>{{ reference.ref_job }} @{{ reference.ref_company }}</h4>
-                        <p>
-                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                            {{ reference.ref_comment }}
-                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                        </p>
-                    </div>
-                </div><!-- End reference item -->
-                {% endfor %}
-
-            </div>
-            <div class="swiper-pagination"></div>
+        <div class="row">
+            {% for reference in references %}
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-item">
+                    <h3>{{ reference.ref_name }}</h3>
+                    <h4>{{ reference.ref_job }} @ {{ reference.ref_company }}</h4>
+                    <p>
+                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                        {{ reference.ref_comment }}
+                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    </p>
+                    <p>Email: {{ reference.ref_email }}</p>
+                    <p>Phone: {{ reference.ref_phone }}</p>
+                </div>
+            </div><!-- End testimonial item -->
+            {% endfor %}
         </div>
-
     </div>
-</section><!-- End References Section -->
+</section><!-- End Testimonials Section -->
 
- <!-- ======= My Portfolio Section ======= -->
+
+<!-- ======= My Portfolio Section ======= -->
 <section id="portfolio" class="portfolio">
     <div class="container">
-
         <div class="section-title">
             <h2>My Portfolio</h2>
             <p>Explore some of my latest projects and works.</p>
         </div>
 
-        <div class="row">
+        <div class="row portfolio-container">
             {% for project in projects %}
-            <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
-                <div class="card">
-                    <!-- <img src="assets/img/portfolio/portfolio-1.jpg" class="card-img-top" alt="..."> -->
-                    <div class="card-body">
-                        <h5 class="card-title">{{ project.project_name }}</h5>
-                        <p class="card-text">{{ project.project_description }}</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">{{ project.project_type }}</small>
-                    </div>
+            <div class="col-lg-4 col-md-6 portfolio-item">
+                <div class="portfolio-info">
+                    <h4>{{ project.project_name }}</h4>
+                    <h6>{{ project.project_type }}</h6>
+                    <p class="project-description">{{ project.project_description }}</p> <!-- Değiştirildi -->
                 </div>
             </div>
             {% endfor %}
         </div>
-
     </div>
 </section>
 <!-- End My Portfolio Section -->
+
+
+
+
+
+
+
+
 
     <!-- ======= Contact Me Section ======= -->
 <section id="contact" class="contact">
